@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        .body {
+            width: 100%;
+            max-width: 800px;
+            margin: 10px auto;
+            /* Canh giữa nội dung */
+            padding: 30px;
+            border: 0px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Canh giữa các card */
+        }
+
+        .person-card {
+            width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+            background-color: #fff;
+        }
+
+        .person-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .person-card h4 {
+            margin-bottom: 10px;
+            color: #337ab7;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .person-card p {
+            margin: 5px 0;
+            color: #555;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        #myChart {
+            max-width: 600px;
+            margin: 20px auto;
+            /* Canh giữa biểu đồ */
+            display: block;
+        }
+
+        .comment-box {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin-left: 80px;
+            border: 0px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+
+            /* Canh giữa nội dung trong comment-box */
+        }
+
+        .comment-box h5 {
+            margin-bottom: 10px;
+            color: #ee1a1a;
+        }
+
+        .comment-box p {
+            color: #555;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            /* Canh giữa các phần tử con */
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #337ab7;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #135b94;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: #ee1a1a;
+        }
+
+        strong {
+            font-size: 16px;
+        }
+
+        #sex,
+        #height,
+        #weight,
+        #weightnow,
+        #bmi,
+        #age,
+        #comment {
+            font-size: 15px;
+        }
+        #name,h4{
+            font-weight: bold;
+        }
+    </style>
+    <title>Thông tin người thống kê</title>
+</head>
+
+<body>
+    <div class="body">
+        <h2 style="text-align: center;">Thông tin thống kê</h2>
+        <canvas id="myChart" width="600" height="400"></canvas>
+        <div class="container">
+            <div class="person-card">
+                <h4>Tên: <span id="name"></span></h4>
+                <p><strong>Giới tính:</strong> <span id="sex">Nam</span></p>
+                <p><strong>Chiều cao (cm):</strong> <span id="height">175</span> </p>
+                <p><strong>Cân nặng lúc trước (kg):</strong> <span id="weight">70</span> </p>
+                <p><strong>Cân nặng hiện tại (kg):</strong> <span id="weightnow">70</span> </p>
+                <p><strong>Bmi hiện tại:</strong> <span id="bmi">70</span> </p>
+                <p><strong>Tuổi:</strong> <span id="age">25</span> </p>
+            </div>
+            <!-- Thêm các card thông tin cho các người khác tùy ý bạn -->
+        </div>
+
+        <div class="comment-box">
+            <h5>Nhận Xét</h5>
+            <p id="comment">chưa có !</p>
+        </div>
+
+        <div class="button-container">
+            <button id="btn">Xác Nhận</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../Be/js/ProgramStatistical.js" type="module"></script>
+</body>
+
+</html>

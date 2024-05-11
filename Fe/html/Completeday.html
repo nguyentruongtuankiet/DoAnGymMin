@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(212, 237, 236);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            width: 100%;
+            flex-direction: column;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background-color: rgb(231,233,235);
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            width: 100%;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            transition: background-color 0.3s ease;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin-top: 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        #info1 h1 {
+            font-size: 56px;
+            margin: 0;
+            color: #007bff;
+        }
+
+        #info2 h2 {
+            font-size: 32px;
+            margin: 20px;
+            color: #555;
+        }
+
+        strong {
+            color: #bd3c00;
+            font-size: 20px;
+            display: block;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .custom-note {
+            background-color: #ffcccb;
+            border: 1px solid #bd3c00;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 150px;
+            margin-right: 150px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+      
+          .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+          }
+          h2{
+            font-size: 32px;
+            font-weight: bold;
+          }
+      
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video id="backgroundVideo" src="../img/cliplogin.mp4" autoplay muted loop></video>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div id="info1" class="row justify-content-center">
+                <h1>😘 🎉 🥳 😘 🎉 🥳 😘 🎉</h1>
+            </div>
+            <div id="info2">
+                <h2>Bạn Đã Hoàn Thành Chương Trình Tập Luyện Của Tôi!</h2>
+            </div>
+            <div class="row justify-content-center">
+                <strong>Lưu Ý:</strong>
+                <div class="custom-note">
+                    Khi ấn xác nhận, mọi dữ liệu của bạn sẽ được chúng tôi xóa khỏi hệ thống. Nếu muốn tập
+                    luyện cùng chúng tôi, bạn sẽ phải đăng kí mới một tài khoản. Nếu bạn thật sự chưa đạt được mục
+                    tiêu mong muốn, hãy dành ít thời gian để đăng nhập lại để chúng tôi có thể giúp bạn đạt được thể
+                    trạng như bạn mong muốn!
+                </div>
+            </div>
+            <button id="btn" class="btn-custom">Xác Nhận</button>
+        </div>
+    </div>
+    <script src="../../Be/js/Completeday.js" type="module"></script>
+</body>
+
+</html>

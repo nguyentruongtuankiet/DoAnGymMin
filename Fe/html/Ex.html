@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color:rgb(234,241,251);
+            padding-top: 1dvh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color:white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            /* Chiều cao bằng chiều cao của trình duyệt */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        video {
+            width: 97%;
+            border-radius: 5px;
+        }
+
+        h3,
+        h5 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        #divbtn {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 10px;
+        }
+
+        #btn {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        button {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 10px;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #scrollbar {
+            width: 100%;
+            height: 250px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        #btnHoanThanh{
+            background-color: #28a745;
+        }
+        #btnHoanThanh:hover{
+            background-color: #1e7e34;
+        }
+        #btnDong{
+            background-color: #dc3545;
+        }
+        #btnDong:hover{
+            background-color: #bd2130;
+        }
+        #spanindex{
+            font-size: 25px;
+        }
+        h2{
+            color: #2a2b28;
+        }
+        #nameEx{
+            color: #1898be;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <h2>Clip Hướng Dẫn</h2>
+
+            <div>
+                <video id="video" src="../img/BungDuoi.mp4" controls></video>
+            </div>
+
+            <div>
+                <h3 id="nameEx">Do san</h3>
+                <h4 id="set"></h4>
+                <h5>Hướng Dẫn</h5>
+            </div>
+
+            <div id="scrollbar">
+                <p id="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe temporibus.</p>
+            </div>
+
+            <div id="divbtn">
+                <div id="btn">
+                    <button id="btnTruoc">Trước</button>
+                    <span id="spanindex"><span id="indexEx">1</span>/ <span id="quanlityEx">10</span> </span>
+                    <button id="btnSau">Sau</button>
+                    <button id="btnHoanThanh">Hoàn Thành Buổi Tập</button>
+                    <button id="btnDong">Đóng</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../../Be/js/ProgramEx.js" type="module"></script>
+</body>
+
+</html>

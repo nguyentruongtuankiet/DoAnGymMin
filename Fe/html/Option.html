@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body {
+        background-color: rgb(241, 241, 241);
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: rgb(212, 237, 236);
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .border {
+        border: 1px solid black;
+        padding: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 10px;
+        background-color: #f1f1f1;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #p {
+        text-align: center;
+        font-size: 70px;
+        color: white;
+        position: relative;
+        z-index: 1;
+        background-color: rgb(12, 198, 86);
+        margin-bottom: 50px;
+    }
+
+    #p::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid black;
+        z-index: -1;
+    }
+
+    span {
+        color: rgb(177, 1, 0);
+    }
+    
+    #select{
+        margin-bottom: 70px;
+    }
+    #border6month:hover{
+        background-color: rgb(231,233,235);
+        color: white;
+    }
+    #border3month:hover{
+        background-color: rgb(231,233,235);
+        color: white;
+    }
+    #border1month:hover{
+        background-color: rgb(231,233,235);
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="p" class="row justify-content-center border">
+            <h1>Sau Tính toán BMI Của Bạn Tôi Khuyên Bạn Nên Lựa Chọn Thời Gian Tập Là <span id="option">3 Tháng</span> Nhé :</h1>
+        </div>
+        <div id="select">
+            <h1>Mời Bạn Lựa Chọn Thời Gian Tập Luyện Của Mình !!!</h1>
+        </div>
+        <div class="row">
+            <div id="border1month" class="border">
+                <h4>1 Tháng</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div id="border3month" class="border">
+                <h4>3 Tháng</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div id="border6month" class="border">
+                <h4>6 Tháng</h4>
+            </div>
+        </div>
+    </div>
+    <script src="../../Be/js/ProgramOption.js" type="module"></script>
+</body>
+</html>

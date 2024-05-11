@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(241, 241, 241);
+          
+        }
+        .container {
+            background-color: rgb(212, 237, 236);
+        }
+
+        #Calendar {
+            width: 100%;
+            height: 550px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .circle {
+            border-radius: 50%;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #f1f1f1;
+            text-align: center;
+            line-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle:hover {
+            color: red;
+        }
+
+        .content-wrapper {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .row2 {
+            margin-bottom: 20px;
+        }
+
+        .progress-wrapper {
+            margin-top: 20px;
+        }
+
+        #challenge {
+            padding: 20px;
+
+            color: whitesmoke;
+            background-color: rgb(12, 198, 86);
+
+        }
+
+        #outstanding {
+            color: rgb(187, 28, 44);
+            font-weight: bold;
+        }
+
+        #Completion {
+            margin-left: 20px;
+        }
+
+        .btn {
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            outline: none;
+        }
+
+        #button {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #progress {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h4 {
+            text-align: right;
+        }
+
+        #btn {
+            background-color: #337ab7;
+            margin-right: 40px;
+            width: 330px;
+        }
+        
+        #btn1 {
+            background-color: #0cc756;
+            width: 330px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div id="challenge" class="row justify-content-center border">
+                <h1>Thử Thách Tập <span id="outstanding">3 Tháng</span> Của Bạn</h1>
+            </div>
+            <h3>Day:</h3>
+            <div id="Calendar" class="row row2">
+
+            </div>
+            <div class="row">
+                <h2 id="Completion">Mức Độ Hoàn Thành:</h2>
+            </div>
+            <h4><span id="level"></span></h4>
+            <div id="progress">
+                <div class="row progress-wrapper"></div>
+            </div>
+        </div>
+
+        <div id="button" class="row justify-content-center">
+            <button id="btn" class="btn btn-primary">Chọn Lại Thời Gian Tập</button>
+            <button id="btn1" class="btn btn-primary">Xem Thống Kê</button>
+        </div>
+    </div>
+
+
+    <script src="../../Be/js/ProgramCalendar.js" type="module"></script>
+</body>
+
+</html>
